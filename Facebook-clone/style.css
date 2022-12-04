@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f9fc;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+.head_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 32px;
+    position: relative;
+}
+
+.head_1 input {
+    width: 500px;
+    height: 30px;
+    border-radius: 24px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-left: 50px;
+}
+
+.head_1 .fa-magnifying-glass {
+    position: absolute;
+    top: 40%;
+    right: 6%
+}
+
+.head_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+
+.head_2 button {
+    background-color: white;
+    border: 1px solid #eee;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.head_2 img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+}
+
+/* Contetn */
+.main {
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.nav-left {
+    width: 16.66%;
+    position: fixed;
+    top: 85px;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #f2f1f6;
+    box-shadow: 5px 5px 15px #ddd;
+    margin-right: 40px;
+}
+
+.nav-left i {
+    font-size: 18px;
+    margin: 8px
+}
+
+.nav-left span {
+    font-size: 13px
+}
+
+.nav-left ul li {
+    list-style: none;
+    padding: 8px 28px;
+    width: 100%;
+}
+
+.nav-left ul li:hover {
+    border-left: 5px solid blue;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* NEW FEED */
+section {
+    margin: 16px 0 0 220px;
+    width: 58.33%;
+}
+
+article {
+    margin: 30px 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 16px
+}
+
+.status {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.status img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.status input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #eee;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+
+.avt {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.emotion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.emotion i {
+    font-size: 20px;
+    padding: 8px
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avt_other {
+    display: flex;
+    align-items: center;
+
+}
+
+.avt_other p {
+    margin-left: 15px;
+}
+
+.new {
+    margin: 16px 0;
+
+}
+
+.img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new img {
+    margin: 12px auto;
+    width: 280px;
+    height: 160px;
+}
+
+
+
+/* Nav Right */
+.nav-right {
+    width: 25%;
+    display: block;
+}
+
+.nav-right-div {
+    margin: 60px 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 16px
+}
+
+.stories {
+    display: flex;
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.img_other {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img_other img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid blue;
+    margin: 12px auto;
+
+}
+
+.product img {
+    width: 100px;
+    margin-bottom: 30px
+}
+
+
+
+.inewfeed i {
+    padding: 12px 24px 12px 0;
+    font-size: 20px;
+}
+
+.inewfeed i:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+
+/* MOBILE */
+.nav_left-mobile {
+    display: none;
+}
+
+
+/* //////////////     REW     //////////////*/
+@media only screen and (max-width:600px) {
+    .input_search {
+        display: none;
+    }
+
+    .icon-head a i {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        display: block;
+    }
+
+    .nav-left {
+        display: none;
+    }
+
+    section {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav_left-mobile {
+        display: block;
+        background-color: rgb(161, 159, 159);
+        padding: 8px;
+        position: fixed;
+        top: 85px;
+        left: 0;
+        right: 0;
+        z-index: 888;
+    }
+
+    .nav_left-mobile ul {
+        display: flex;
+        justify-content: space-around
+    }
+
+    .nav_left-mobile ul li {
+        list-style: none;
+    }
+
+    .nav_left-mobile ul li a {
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .icon-head a i {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        display: none;
+    }
+
+    .nav-left {
+        display: none;
+    }
+
+    section {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav_left-mobile {
+        display: block;
+        background-color: rgb(161, 159, 159);
+        padding: 8px;
+        position: fixed;
+        top: 85px;
+        left: 0;
+        right: 0;
+        z-index: 888;
+    }
+
+    .nav_left-mobile ul {
+        display: flex;
+        justify-content: space-around
+    }
+
+    .nav_left-mobile ul li {
+        list-style: none;
+    }
+
+    .nav_left-mobile ul li a {
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .icon-head a i {
+        display: none;
+    }
+
+    .stories {
+        flex-direction: column;
+    }
+
+    .nav-left {
+        display: none;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    section {
+        padding: 12px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:920px) {
+    .icon-head a i {
+        display: inline-block;
+        padding: 0 12px;
+        font-size: 16px
+    }
+
+    section {
+        margin: 16px 0 0 220px;
+        width: 90%;
+    }
+
+    .nav-left {
+        display: block;
+    }
+
+    .nav_left-mobile {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width:1200px) {
+    .icon-head a i {
+        display: inline-block;
+        padding: 0 12px;
+        font-size: 16px
+    }
+
+    .nav_left-mobile {
+        display: none;
+    }
+
+    .stories {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .img_skincare {
+        width: 100%;
+        height: 80px;
+        padding: 2px;
+    }
+
+    .nav-right {
+        display: block;
+    }
+}

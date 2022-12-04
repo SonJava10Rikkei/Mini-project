@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloneFacebook</title>
+
+    <script src="https://kit.fontawesome.com/68734f4fab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="colStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Phần đầu -->
+        <header>
+            <div class="col-6 head_1">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"
+                        style="font-size:40px; color:rgb(9, 9, 131)"></i></a>
+                <input type="text" placeholder="Tìm kiếm trên Facebook" class="input_search" />
+                <div>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+            <div class="col-2"></div>
+
+            <div class="col-6 head_2">
+                <div style="display:flex; align-items:center;">
+                    <a href="#"> <img src="images/avt.jpg" alt=""></a>
+                    <a href="#">
+                        <p style="margin-left:8px">Lê Hoàng</p>
+                    </a>
+                </div>
+                <div class="icon-head">
+                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-house"></i></a>
+                    <a href="#"> <i class="fa-solid fa-message" style="color:aqua"></i></a>
+                    <a href="#"> <i class="fa-solid fa-bell" style="color:aqua"></i></a>
+                    <a href="#"> <i class="fa-solid fa-user" style="color:#ccc"></i></a>
+                    <a href="#"> <i class="fa-solid fa-circle-question" style="color:#ccc"></i></a>
+                    <a href="#"> <i class="fa-solid fa-caret-down"></i></a>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Mobile Nav-Left -->
+        <nav class="nav_left-mobile">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-newspaper"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa-solid fa-tv"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Phần Thân -->
+        <div class="main">
+            <!-- Navbar bên trái (Side Bar) -->
+            <nav class="nav-left">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li><i class="fa-solid fa-newspaper"></i><span> News Feed</span></li>
+                    <li><i class="fa-regular fa-envelope"></i><span> Messages</span></li>
+                    <li><i class="fa-solid fa-tv"></i><span> Watch</span></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i><span> Marketplace</span></li>
+                </ul>
+
+                <ul style="margin-top:40px">
+                    <li><b>Explore</b></li>
+                    <li><i class="fa-solid fa-map-location-dot"></i><span> Fundraisers</span></li>
+                    <li><i class="fa-regular fa-flag"></i><span> Pages</span></li>
+                    <li><i class="fa-solid fa-user-group"></i><span> Groups</span></li>
+                    <li><i class="fa-solid fa-camera"></i><span> Events</span></li>
+                    <li><i class="fa-regular fa-bookmark"></i><span> Saved</span></li>
+                    <li>
+                        <h4>See More</h4>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Phần nội dung chính -->
+            <section class="">
+                <article class="sidebar">
+                    <div class="status">
+                        <a href="#"> <img src="images/avt.jpg" alt="" /></a>
+                        <input type="text" placeholder="What is your mind, Hoang?" />
+                    </div>
+                    <hr>
+                    <div class="emotion">
+                        <div>
+                            <a href="#"> <i class="fa-sharp fa-solid fa-image"
+                                    style="color:rgb(15, 191, 191)"></i><span>Photo/Video</span></a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fa-solid fa-user-tag" style="color:rgb(243, 117, 0)"></i><span>Tag
+                                    Friends</span></a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fa-solid fa-face-laugh"
+                                    style="color:gold"></i><span>Feeling/Activity</span></a>
+                        </div>
+                        <div><a href="#"><i class="fa-solid fa-ellipsis"></i></a></div>
+                    </div>
+                </article>
+
+                <article class="newfeed">
+                    <div class="user">
+                        <div class="avt_other">
+                            <a href="#"> <img class="avt" src="images/avtthay.jpg" alt=""></a>
+                            <div>
+                                <a href="#">
+                                    <p><b>Trịnh Đức Toàn</b></p>
+                                </a>
+                                <p style="opacity:0.5; font-size:14px">a minute ago</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"> <i class="fa-solid fa-ellipsis"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="new">
+                        <p>Relax and quality time with my self</p>
+                        <p>Good time good place</p>
+
+                        <div class="img">
+                            <a href="#"><img src="images/img_1.jpg" alt="" /></a>
+                            <a href="#"><img src="images/img_2.jpeg" alt="" /></a>
+                            <a href="#"><img src="images/img_3.jpg" alt="" /></a>
+                        </div>
+
+                        <div class="inewfeed">
+                            <i class="fa-regular fa-thumbs-up"><span> Bạn và 99 người khác</span></i>
+                            <i class="fa-regular fa-message"><span> 8</span></i>
+                            <i class="fa-sharp fa-solid fa-share"><span> 9</span></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="user">
+                        <div class="avt_other">
+                            <a href="#"> <img class="avt" src="images/avtha.jpg" alt=""></a>
+                            <div>
+                                <a href="#">
+                                    <p><b>Tạ Thu Hà </b></p>
+                                </a>
+                                <p style="opacity:0.5; font-size:14px">a minute ago</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"> <i class="fa-solid fa-ellipsis"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="new">
+                        <p>I have good partner and good team.</p>
+                        <p>Thanks for today team.</p>
+                        <div class="img">
+                            <a href="#"> <img src="images/teamwork1.jpg" alt="" /></a>
+                            <a href="#"> <img src="images/teamwork2.jpg" alt="" /></a>
+                            <a href="#"> <img src="images/teamwork3.jpg" alt="" /></a>
+                        </div>
+
+                        <div class="inewfeed">
+                            <i class="fa-regular fa-thumbs-up"><span> Bạn và 666 người khác</span></i>
+                            <i class="fa-regular fa-message"><span> 999</span></i>
+                            <i class="fa-sharp fa-solid fa-share"><span> 999</span></i>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+
+            <!-- Navbar bên phải (QC) -->
+            <nav class="nav-right">
+                <div class="nav-right-div">
+                    <div class="stories">
+                        <p><b>Stories</b></p>
+                        <a href="#">
+                            <p>See all</p>
+                        </a>
+                    </div>
+
+                    <div class="img_other">
+                        <a href="#"> <img src="images/avttron.jpg" alt="" style="border:none"></a>
+                        <a href="#"> <img src="images/avtthay.jpg" alt=""></a>
+                        <a href="#"> <img src="images/avtanhson.jpg" alt=""></a>
+                        <a href="#"> <img src="images/avtha.jpg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="nav-right-div">
+                    <p><b>Recently Viewed</b></p>
+                    <div class="product">
+                        <a href="#"> <img src="images/perfume1.jpg" alt=""></a>
+                        <img src="images/perfume2.jpg" alt="">
+                        <a href="#"> <img src="images/perfume3.jpg" alt=""></a>
+                        <a href="#"> <img src="images/perfume4.jpg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="nav-right-div">
+                    <div class="stories">
+                        <p><b>Sponsored</b></p>
+                        <a href="#">
+                            <p>Creat Ad</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <img class="img_skincare" src="images/skincare.jpg" alt="">
+                    </div>
+
+                    <p><b>Skincare Stuff</b></p><br>
+                    <a href="https://www.facebook.com/naturalskincarestuff/">
+                        <h3 style="color:rgb(7, 7, 156)">Facebook</h3>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
