@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Booking</title>
+
+    <!-- font awesome cdn link  -->
+    <script
+      src="https://kit.fontawesome.com/68734f4fab.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo"><span>T</span>ravel</a>
+
+      <nav class="navbar">
+        <a href="./index.html">Trang chủ</a>
+        <a href="#book">Book Lịch</a>
+        <a href="./index.html#packages">Tour trọn gói</a>
+        <a href="./index.html#gallery">Điểm đến</a>
+        <a href="./index.html">Phản hồi</a>
+        <a href="#contact">Liên hệ</a>
+        <!-- <a href="./register.html">Đăng nh</a> -->
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+        <span style="color: white; font-size: 2rem"> Log In</span>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <!-- <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email" />
+        <input type="password" class="box" placeholder="enter your password" />
+        <input type="submit" value="login now" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+      </form> -->
+    </div>
+
+    <!-- home section starts  -->
+
+    <!-- home section ends -->
+
+    <!-- packages section starts  -->
+
+    <section class="packages" id="packages">
+      <br />
+      <br />
+      <h1 class="heading">
+        <span>M</span>
+        <span>Y</span>
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+      </h1>
+    </section>
+
+    <!-- packages section ends -->
+
+    <!-- review section starts  -->
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <!-- contact section ends -->
+
+    <!-- brand section  -->
+
+    <!-- footer section  -->
+
+    <section class="footer">
+      <div class="box-container" id="contact">
+        <div class="box">
+          <h3>Giới thiệu:</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            quas magni pariatur est accusantium voluptas enim nemo facilis sit
+            debitis.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Chi nhánh</h3>
+          <a href="#">Hà Nội:</a>
+          <a href="#">Đà Nẵng:</a>
+          <a href="#">TP Hồ Chí Minh:</a>
+        </div>
+        <div class="box">
+          <h3>Liên hệ:</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+        </div>
+      </div>
+
+      <h1 class="credit">created by <span> </span> | all rights reserved!</h1>
+    </section>
+
+    <!-- custom js file link  -->
+  </body>
+  <script>
+    let searchBtn = document.querySelector("#search-btn");
+    let searchBar = document.querySelector(".search-bar-container");
+    let formBtn = document.querySelector("#login-btn");
+    let loginForm = document.querySelector(".login-form-container");
+    let formClose = document.querySelector("#form-close");
+    let menu = document.querySelector("#menu-bar");
+    let navbar = document.querySelector(".navbar");
+    let videoBtn = document.querySelectorAll(".vid-btn");
+    let textLog = document.querySelector("#textLog");
+
+    window.onscroll = () => {
+      searchBtn.classList.remove("fa-times");
+      searchBar.classList.remove("active");
+      menu.classList.remove("fa-times");
+      navbar.classList.remove("active");
+      loginForm.classList.remove("active");
+    };
+
+    menu.addEventListener("click", () => {
+      menu.classList.toggle("fa-times");
+      navbar.classList.toggle("active");
+    });
+
+    searchBtn.addEventListener("click", () => {
+      searchBtn.classList.toggle("fa-times");
+      searchBar.classList.toggle("active");
+    });
+
+    // formBtn.addEventListener('click', () =>{
+    //     loginForm.classList.add('active');
+    // });
+    textLog.addEventListener("click", () => {
+      loginForm.classList.add("active");
+    });
+
+    formClose.addEventListener("click", () => {
+      loginForm.classList.remove("active");
+    });
+
+    videoBtn.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelector(".controls .active").classList.remove("active");
+        btn.classList.add("active");
+        let src = btn.getAttribute("data-src");
+        document.querySelector("#video-slider").src = src;
+      });
+    });
+
+    let text = document.querySelector("#textLog");
+    let btnRegister = document.querySelector("#btnRegister");
+
+    if (sessionStorage.getItem(USERNAME) != null) {
+      text.innerHTML = sessionStorage.getItem(USERNAME);
+      btnRegister.style.display = "none";
+    }
+  </script>
+</html>

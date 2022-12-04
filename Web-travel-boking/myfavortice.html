@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Booking</title>
+
+    <!-- font awesome cdn link  -->
+    <script
+      src="https://kit.fontawesome.com/68734f4fab.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo"><span>T</span>ravel</a>
+
+      <nav class="navbar">
+        <a href="./index.html">Trang chủ</a>
+        <a href="./mybooking.html">Book Lịch</a>
+        <a href="./index.html#packages">Tour trọn gói</a>
+        <a href="./index.html#gallery">Điểm đến</a>
+        <a href="./index.html#review">Phản hồi</a>
+        <a href="./index.html#contact">Liên hệ</a>
+        <!-- <a href="./register.html">Đăng nh</a> -->
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+        <span style="color: white; font-size: 2rem" id="'textLog"> Log In</span>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <!-- <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email" />
+        <input type="password" class="box" placeholder="enter your password" />
+        <input type="submit" value="login now" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+      </form> -->
+    </div>
+
+    <!-- home section starts  -->
+
+    <!-- home section ends -->
+
+    <!-- packages section starts  -->
+
+    <section class="packages" id="packages">
+      <br />
+      <br />
+      <h1 class="heading">
+        <span>M</span>
+        <span>Y</span>
+        <span>F</span>
+        <span>A</span>
+        <span>V</span>
+        <span>O</span>
+        <span>T</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+      </h1>
+
+      <!-- <div class="box-container">
+        <div class="box">
+          <img src="images/vietnam1.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Hạ Long</h3>
+            <p>
+              Hạ Long là thành phố tỉnh lỵ của tỉnh Quảng Ninh, Việt Nam. Thành
+              phố được đặt theo tên của vịnh Hạ Long, vịnh biển nằm ở phía nam
+              thành phố và là một di sản thiên nhiên nổi tiếng của Việt Nam. Tên
+              "Hạ Long" nghĩa là "con rồng bay xuống
+            </p>
+            <div class="hearts">
+              <i class="fa-solid fa-heart addFavourite"></i>
+            </div>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">ĐẶT VÉ</a>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- packages section ends -->
+
+    <!-- review section starts  -->
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </h1>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- brand section  -->
+
+    <!-- footer section  -->
+
+    <section class="footer">
+      <div class="box-container" id="contact">
+        <div class="box">
+          <h3>Giới thiệu:</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            quas magni pariatur est accusantium voluptas enim nemo facilis sit
+            debitis.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Chi nhánh</h3>
+          <a href="#">Hà Nội:</a>
+          <a href="#">Đà Nẵng:</a>
+          <a href="#">TP Hồ Chí Minh:</a>
+        </div>
+        <div class="box">
+          <h3>Liên hệ:</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+        </div>
+      </div>
+
+      <h1 class="credit">created by <span> </span> | all rights reserved!</h1>
+    </section>
+
+    <!-- custom js file link  -->
+  </body>
+  <script>
+    // let searchBtn = document.querySelector("#search-btn");
+    // let searchBar = document.querySelector(".search-bar-container");
+    // // let formBtn = document.querySelector("#login-btn");
+    // // let loginForm = document.querySelector(".login-form-container");
+    // let formClose = document.querySelector("#form-close");
+    // let menu = document.querySelector("#menu-bar");
+    // let navbar = document.querySelector(".navbar");
+    // let videoBtn = document.querySelectorAll(".vid-btn");
+    // let textLog = document.querySelector("#textLog");
+
+    // window.onscroll = () => {
+    //   searchBtn.classList.remove("fa-times");
+    //   searchBar.classList.remove("active");
+    //   menu.classList.remove("fa-times");
+    //   navbar.classList.remove("active");
+    //   loginForm.classList.remove("active");
+    // };
+
+    // menu.addEventListener("click", () => {
+    //   menu.classList.toggle("fa-times");
+    //   navbar.classList.toggle("active");
+    // });
+
+    // searchBtn.addEventListener("click", () => {
+    //   searchBtn.classList.toggle("fa-times");
+    //   searchBar.classList.toggle("active");
+    // });
+
+    // formBtn.addEventListener('click', () =>{
+    //     loginForm.classList.add('active');
+    // });
+    // textLog.addEventListener("click", () => {
+    //   loginForm.classList.add("active");
+    // });
+
+    // formClose.addEventListener("click", () => {
+    //   loginForm.classList.remove("active");
+    // });
+
+    // videoBtn.forEach((btn) => {
+    //   btn.addEventListener("click", () => {
+    //     document.querySelector(".controls .active").classList.remove("active");
+    //     btn.classList.add("active");
+    //     let src = btn.getAttribute("data-src");
+    //     document.querySelector("#video-slider").src = src;
+    //   });
+    // });
+    let text = document.getElementById("textLog");
+    let btnRegister = document.querySelector("#btnRegister");
+    // console.log(text);
+    const USERNAME = "username";
+    let span = document.querySelectorAll("span");
+    console.log(span[1].lastChild);
+
+    function showMyfavortice() {
+      let x = localStorage.getItem(localStorage.getItem(USERNAME));
+      console.log(x);
+      let listHearts = JSON.parse(x);
+      console.log(listHearts);
+      let section = document.getElementById("packages");
+      console.log(section);
+      for (i = 0; i < listHearts.length; i++) {
+        console.log(listHearts[0]);
+        let divContainer = document.createElement("div");
+        console.log(divContainer);
+        divContainer.className = "box-container";
+        section.appendChild(divContainer);
+        let divBox = document.createElement("div");
+        divBox.className = "box";
+        let img = document.createElement("img");
+        let divContent = document.createElement("div");
+        divContent.className = "content";
+        let h3Name = document.createElement("h3");
+        let iconMap = document.createElement("i");
+        iconMap.className = "fas fa-map-marker-alt";
+        let divHeart = document.createElement("div");
+        divHeart.className = "heart";
+        let iconFvt = document.createElement("i");
+        iconFvt.className = "fa-solid fa-heart addFavourite";
+        let divPrice = document.createElement("div");
+        divPrice.className = "price";
+        let aBook = document.createElement("a");
+        aBook.className = "btn";
+        let span = document.createElement("span");
+        // let text = document.createTextNode("TextNode");
+        divContainer.appendChild(divBox);
+        divBox.appendChild(img);
+        divBox.appendChild(divContent);
+        divContent.appendChild(h3Name);
+        divContent.appendChild(divHeart);
+        divContent.appendChild(divPrice);
+        divContent.appendChild(aBook);
+        h3Name.appendChild(iconMap);
+        // h3Name.appendChild(text);
+        divHeart.appendChild(iconFvt);
+        divPrice.appendChild(span);
+        aBook.innerText = "ĐẶT VÉ";
+        span.innerText = listHearts[i].price;
+        h3Name.innerText = listHearts[i].name;
+        img.src = listHearts[i].img;
+      }
+    }
+
+    if (sessionStorage.getItem(USERNAME) != null) {
+      // text.innerHTML = sessionStorage.getItem(USERNAME);
+      span[1].lastChild.textContent = sessionStorage.getItem(USERNAME);
+      showMyfavortice();
+    }
+  </script>
+</html>
