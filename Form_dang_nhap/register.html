@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <div>
+        <label for="email">Email</label><br>
+        <input type="text" id="email"><br>
+        <div class="error-email" style="display: none;">error</div><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password"><br>
+        <div class="error-password" style="display: none;">error</div><br>
+
+        <label for="confirmpassword">Confirmpassword</label><br>
+        <input type="password" id="confirmpassword"><br>
+        <div class="error-confirmpassword" style="display: none;">error</div><br>
+
+        <button onclick="register()">Register</button>
+
+        <p>Bạn đã có tài khoản rồi <span id="redirectRegister" onclick="redirectLogin()" style="color:red">Login</span>
+        </p>
+    </div>
+    <script>
+        function redirectLogin() {
+            location.href = "login.html";
+        }
+        function register() {
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmpassword").value;
+            if (email == "") {
+                let errorEmail = document.getElementById("errorEmail").value;
+            }
+        }
+    </script>
+</body>
+
+</html>
