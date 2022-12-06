@@ -1,3 +1,11 @@
+:root {
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+}
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -6,36 +14,71 @@
   font-family: Neue Kabel, sans-serif;
   font-size: 16px;
 }
-
-header {
-  
+/* Doi mau placeholder */
+::placeholder {
+  color: #ffffff9c;
 }
+
 .c-layout {
   background-color: rgb(210, 214, 214);
   height: 2000px;
 }
+.t-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 
 .container-header {
-  /* background-color: rgba(14, 119, 224, 0.377); */
-  background-image: url(/Session19_Storing-data-in-the-browser/Mini_Project/assets/img/header_bg_top_right.jpg);
-  display: flex;
+  width: 100%;
+  background: url(/WebBanHang/assets/img/header_bg_top.jpg) no-repeat 0 / cover;
   height: 50px;
   text-align: center;
-  height: 40px;
 }
+.t-header_topBackground {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.t-phone-hotlineLeft {
+  background-color: #00aeef;
+  padding-left: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.t-phone-hotlineLeft span {
+  font-family: var(--bs-font-monospace);
+}
+
 .t-header_contactLeft {
   align-items: center;
   background-color: #00aeef;
   display: flex;
-  width: 100%;
+  justify-content: center;
   height: 100%;
   justify-content: flex-start;
   text-decoration: none;
   text-align: center;
-  padding-right: 121px;
   outline: none;
   padding: 0;
   white-space: nowrap;
+}
+
+.t-header_contactRight {
+  align-items: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.t-header_contactRight_element {
+  margin-left: 3rem;
 }
 .t-header_contactRight_btn {
   align-items: center;
@@ -45,22 +88,14 @@ header {
   background-color: transparent;
   border: 0;
   color: #fff;
-  display: flex;
-  font-family: inherit;
+  /* display: flex; */
+  font-family: var(--bs-font-monospace);
   font-size: 1rem;
   justify-content: center;
   line-height: 1.1875rem;
   outline: none;
   padding: 0;
   white-space: nowrap;
-}
-.t-header_contactRight_element {
-  
-  /* background-color: #bab9ba; */
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: flex-end;
 }
 
 .t-headerSearch {
@@ -102,12 +137,11 @@ header {
   width: 2rem;
 }
 
-.header_bottom {
+.t-header_bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
   background-color: violet;
   height: 90px;
-}
-
-/* Doi mau placeholder */
-::placeholder {
-  color: #ffffff9c;
 }
