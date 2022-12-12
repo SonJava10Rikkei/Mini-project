@@ -88,8 +88,6 @@
   background-color: transparent;
   border: 0;
   color: #fff;
-  /* display: flex; */
-  font-family: var(--bs-font-monospace);
   font-size: 1rem;
   justify-content: center;
   line-height: 1.1875rem;
