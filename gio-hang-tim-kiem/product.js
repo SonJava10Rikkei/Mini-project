@@ -33,7 +33,7 @@
 // ]
 // localStorage.setItem("listProductsInlocal", JSON.stringify(listProducts));
 
-    let listProductCuaLocal = JSON.parse(localStorage.getItem("listProductsInlocal"));
+let listProductCuaLocal = JSON.parse(localStorage.getItem("listProductsInlocal"));
 
 
 function renderListProducts(all) {
@@ -114,7 +114,7 @@ function timKiemSP() {
     for (let i = 0; i < listProductCuaLocal.length; i++) {
         if (listProductCuaLocal[i].name.toUpperCase().indexOf(valueInput) != -1) {
             console.log('11112');
-            
+
             listRender.push(listProductCuaLocal[i])
         }
     }
@@ -123,32 +123,7 @@ function timKiemSP() {
 
 }
 
-// function timKiemSP() {
-//     let timKiemIphone = document.getElementById("inPutSearch").value;
-//     // console.log(timKiemIphone.value);
-//     let data = '';
-//     for (let i = 0; i < listProductCuaLocal.length; i++) {
-//         if (listProductCuaLocal[i].name.indexOf(timKiemIphone) != -1) {
-//             console.log('a');
-//         data += `
-//          <div class="product">
-//             <img src="${listProductCuaLocal[i].image}" alt="">    
-//             <p>${listProductCuaLocal[i].name}</p>
-//             <label for="price">${listProductCuaLocal[i].price}</label><br>
-//             <input type="number" value="1"><br>
-//             <div>
-//             <input type="number" value="1">
-//             <i onclick = addToCart(${listProductCuaLocal[i].id}) 
-//             class="fa-solid fa-cart-shopping" ></i>
-//             </div>
-//         </div>
-//         `
 
-//         }
-//     }
-// document.getElementById("timKiemIphone").innerHTML="data";
-
-// }
 
 
 
